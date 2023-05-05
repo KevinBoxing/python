@@ -17,6 +17,7 @@ GSPC=GSPC.iloc[:,1:]
 GSPC.index=pd.to_datetime(GSPC.index)
 GSPC.head()
 
+
 close=GSPC.Close
 high=GSPC.High
 low=GSPC.Low
