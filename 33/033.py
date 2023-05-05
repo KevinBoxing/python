@@ -3,13 +3,11 @@ Please use the following example commands to specify the path containing code an
 import os
 os.chdir('E:\\book_data\\part 5\\033')
 '''
-import os
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 plt.rcParams['font.sans-serif'] = ['SimHei']
 plt.rcParams['axes.unicode_minus'] = False
-os.chdir('C:\\Users\\Administrator\\Downloads\\Python_TOOLS_ANSWER\\dataandprogrammer\\033')
 CJSecurities=pd.read_csv('CJSecurities.csv',index_col='Date')
 CJSecurities=CJSecurities.iloc[:,1:]
 CJSecurities.index=pd.to_datetime(CJSecurities.index)
