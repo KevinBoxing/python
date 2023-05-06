@@ -116,7 +116,7 @@ winRate
 (1+ret).cumprod().plot(label='stockRet')
 (1+tradeRet).cumprod().plot(label='tradeRet')
 plt.legend()
-
+plt.show
 
 def Hold(signal):
     hold=np.zeros(len(signal))
