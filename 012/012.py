@@ -4,8 +4,9 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-ChinaBank=pd.read_csv('ChinaBank.csv',index_col='Date')
-ChinaBank=ChinaBank.iloc[:,1:]
+
+ChinaBank=pd.read_csv('C:\\lianghuatouzi\\python\\012\\601066.txt',index_col=1,sep=" ")
+ChinaBank=ChinaBank.iloc[:,1:5]
 ChinaBank.head() 
 ChinaBank.index=pd.to_datetime(ChinaBank.index)
 Close=ChinaBank.Close
