@@ -8,7 +8,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 plt.rcParams['font.sans-serif'] = ['SimHei']
 plt.rcParams['axes.unicode_minus'] = False
-CJSecurities=pd.read_csv('CJSecurities.csv',index_col='Date')
+CJSecurities=pd.read_csv('C:\lianghuatouzi\python\\33\CJSecurities.csv',index_col='Date')
 CJSecurities=CJSecurities.iloc[:,1:]
 CJSecurities.index=pd.to_datetime(CJSecurities.index)
 CJSecurities.head()
